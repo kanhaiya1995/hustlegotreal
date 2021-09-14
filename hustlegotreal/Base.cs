@@ -25,26 +25,3 @@ namespace hustlegotreal
         }
     }
 }
-
-//public Base()
-//    {
-//        var dirName = AppContext.BaseDirectory.Substring(0, AppContext.BaseDirectory.IndexOf("bin", StringComparison.Ordinal));
-//        Driver = _factory.Value.GetBrowser(Config.Browser);
-//        Driver.Page.Manage().Window.Maximize(); //maximaize windows
-//        var page = new Authentication(Driver);
-//    }
-
-//[TearDown]
-//public void AfterException()
-//{
-//    var status = TestContext.CurrentContext.Result.Outcome.Status;
-//    var errorMessage = TestContext.CurrentContext.Result.Message;
-//    if (status == TestStatus.Failed)
-//        throw new Exception(errorMessage);
-//}
-
-//[OneTimeTearDown]
-//public void OneTimeTearDown()
-//{
-//    Driver.Page.Quit();
-//}
