@@ -13,6 +13,7 @@ namespace hustlegotreal.Core.Browsers
             var fileInfo = new FileInfo(dirName);
             var parentDirName = fileInfo?.FullName;
             var chromeOptions = new ChromeOptions();
+            //hide browser
             chromeOptions.AddArguments("headless");
             return new BrowserAdapter<ChromeDriver>(new ChromeDriver(parentDirName + @"libs", chromeOptions), BrowserType.Chrome);
         }
